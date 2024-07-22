@@ -1,9 +1,6 @@
-"use client";
-
 import Image from "next/image";
 
-import Heading3 from "@/components/Heading3";
-import { Card } from "@/lib/type";
+import { Card } from "@lib/type";
 
 interface PlayerProps {
   label: string;
@@ -14,9 +11,9 @@ interface PlayerProps {
 export const Player = ({ label, cards, score }: PlayerProps) => {
   return (
     <div className="flex flex-col gap-5 items-center justify-center w-full">
-      <Heading3>
+      <h3>
         {label} : {score}
-      </Heading3>
+      </h3>
       <div className="flex gap-5 items-center">
         {cards.map((card) => (
           <Image

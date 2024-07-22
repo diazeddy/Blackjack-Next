@@ -4,11 +4,11 @@ import { useEffect, useCallback, useState, useRef, MouseEvent } from "react";
 import Image from "next/image";
 import { Fireworks } from "fireworks-js";
 
-import { Card } from "@/lib/type";
+import { Card } from "@lib/type";
 import { Player } from "./Player";
-import { getCards, shuffleDeck } from "@/lib/api";
-import { Button } from "@/components/ui/button";
-import { getScore } from "@/lib/utils";
+import { getCards, shuffleDeck } from "@lib/api";
+import { Button } from "@components/ui/button";
+import { getScore } from "@lib/utils";
 import logo from "@/assets/logo.svg";
 
 interface GameBoardProps {
